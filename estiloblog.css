@@ -8,20 +8,28 @@ body {
 
 .titulo {
     color: blue;
-    font-size: 70px;
+    font-size: 90px;
     text-shadow: 0.1em 0.1em #696868
 }
 
 .cabeçalho {
-    display:inline-block;
+    display:flex;  
+    justify-content: flex-start;
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.article {
     border: 2px solid blue;
     border-radius: 8px;
     width: 1000px;
     height: 300px;
-    margin: 20px 10px 10px 300px;
+    margin: 20px 10px 20px 10px;
     padding: 20px;
     background-color: rgb(151, 149, 149);
     color:white;
@@ -43,13 +51,18 @@ body {
 .rodape {
     background-color: rgb(77,77,231);
     color: white;
-     text-shadow: 0.1em 0.1em #333;
+    text-shadow: 0.1em 0.1em #333;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction:row ;/* inline*/
+    justify-content: center;
 }
 
 #rod {
     
-    margin: 5px 10px 30px 300px;
-    padding: 10px 10px 20px 10px;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
 
 }
 
